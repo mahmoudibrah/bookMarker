@@ -1,0 +1,46 @@
+:root {
+  --dark-color: #19283f;
+  --main-transition: 0.5s;
+  --main-color:  #0078ff;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: nono;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+    color: #4e4e4e;
+    text-transform: capitalize;
+}
+header .container {
+  color: #AAA;
+  border-bottom: 2px solid #9999;
+}
+section .contant {
+  background-color: #eee;
+}
+section .contant input::placeholder {
+  transition: 0.7s;
+}
+section .contant input:focus::placeholder {
+  opacity: 0;
+}
+#display .box {
+  background-image: linear-gradient( #EEE,#FFF);
+}
+
+
+
+
+
+
+
+
+
+
+

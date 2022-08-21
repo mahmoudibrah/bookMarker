@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarker by 7oda</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="pb-3 mt-5">
+      <div class="container">
+        <h1>BookMarker</h1>
+      </div>
+    </header>
+    <section class="pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="contant text-center mx-auto p-3">
+            <div class="col-12">
+              <h2>Bookmark your favorite sites</h2>
+            </div>
+            <div class="col-12">
+              <p>Site Name</p>
+            </div>
+            <div class="col-12">
+              <input
+                class="form-control mb-3 mx-auto w-50"
+                type="text"
+                placeholder="BookMarker Name"
+                id="BookMarkerName"
+              />
+            </div>
+            <div class="col-12">
+              <p>Site URL</p>
+            </div>
+            <div class="col-12">
+              <input
+                class="form-control mx-auto mb-3 w-50"
+                type="text"
+                placeholder="website URL"
+                id="websiteURL"
+              />
+            </div>
+            <div class="col-12">
+              <button
+                onclick="addBooks()"
+                type="submit"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <input oninput="searchBook(this.value)" type="search" placeholder="search Book" class="form-control w-50 mx-auto my-3" id="">
+    </div>
+    <section id="display">
+      <div class="container" id="bodyContant">
+
+      </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
